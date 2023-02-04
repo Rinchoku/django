@@ -3,4 +3,6 @@ services:
     python:
         build: ./docker/python
         container_name: python
+        volumes:
+            - ./src/:/var/www/html/
         tty: true
